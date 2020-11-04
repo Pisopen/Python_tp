@@ -16,7 +16,6 @@ gameDf= gameDf.drop(['Name', 'Year_of_Release','Genre','JP_Sales', 'Publisher', 
 
 #Encode dataset
 gameDf.Platform = pd.Categorical(gameDf.Platform)
-gameDf.Name = pd.Categorical(gameDf.Name)
 gameDf.Platform = gameDf.Platform.cat.codes
 gameDf.Name = gameDf.Name.cat.codes
 
